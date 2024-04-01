@@ -64,6 +64,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <19 18>;
         };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
