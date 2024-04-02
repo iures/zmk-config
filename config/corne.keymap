@@ -161,7 +161,7 @@
 &none  &kp Q        &kp W            &kp E                &kp R              &kp T                      &kp Y                    &kp U              &kp I                &kp O            &kp P                           &none
 &none  &hml LGUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml LG(LC(LS(LALT))) G    &hmr LG(LC(LS(LALT))) H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_COMMAND SINGLE_QUOTE  &none
 &none  &kp Z        &kp X            &kp C                &kp V              &kp B                      &kp N                    &kp M              &kp COMMA            &kp DOT          &kp FSLH                        &none
-                                     &kp LEFT_SHIFT       &kp BACKSPACE      &mo 2                      &mo 1                    &kp SPACE          &kp ENTER
+                                     &kp LS(BACKSPACE)    &kp LEFT_SHIFT     &mo 2                      &mo 1                    &kp SPACE          &kp ENTER
             >;
         };
 
