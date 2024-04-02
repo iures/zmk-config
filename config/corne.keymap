@@ -99,6 +99,11 @@
             bindings = <&kp TAB>;
             key-positions = <16 15>;
         };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {
