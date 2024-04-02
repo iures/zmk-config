@@ -91,7 +91,7 @@
         };
 
         right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <18 30>;
         };
 
