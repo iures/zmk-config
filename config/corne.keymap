@@ -208,16 +208,16 @@
             >;
         };
 
-        layer_3 {
+        PS_BASE {
             bindings = <
-&trans  &kp Q      &kp L      &kp M          &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp B      &kp L      &kp E          &kp G      &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp LC(Z)  &kp LS(LC(Z))  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans         &kp SPACE  &lt 4 ESCAPE    &trans  &trans  &trans
+&trans  &kp Q      &kp L      &kp M          &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp B      &kp L      &kp E          &kp G      &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp LC(Z)  &kp LS(LC(Z))  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans         &kp SPACE  &mo 4     &trans  &trans  &trans
             >;
         };
 
-        layer_4 {
+        PS_NAV {
             bindings = <
 &trans  &trans     &trans  &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp SPACE  &kp Z   &kp R      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
