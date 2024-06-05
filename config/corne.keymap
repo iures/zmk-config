@@ -159,13 +159,15 @@
         };
 
         Photoshop_1 {
-            bindings = <&sl 3>;
+            bindings = <&to 3>;
             key-positions = <8 9 10>;
+            layers = <0>;
         };
 
         Default_layer {
-            bindings = <&sl 0>;
+            bindings = <&to 0>;
             key-positions = <1 2 3>;
+            layers = <3 4>;
         };
     };
 
