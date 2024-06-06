@@ -77,6 +77,16 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp LC(LS(D))>;
         };
+
+        undo: undo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "UNDO";
+            bindings = <&key_repeat>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            quick-tap-ms = <100>;
+        };
     };
 
     combos {
@@ -228,7 +238,7 @@
             bindings = <
 &trans  &kp Q      &laso_clear_selection  &marquee_reselect  &trans            &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp B      &kp L                  &kp E              &kp G             &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp LC(Z)              &kp LS(LC(Z))      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &undo 0 LC(Z)          &undo 0 LS(LC(Z))  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                           &kp LEFT_SHIFT     &kp LEFT_CONTROL  &mo 4           &trans  &trans  &trans
             >;
         };
