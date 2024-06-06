@@ -185,34 +185,40 @@
             layers = <1 2 0>;
         };
 
-        Photoshop_1 {
+        PS_BASE_LAYER {
             bindings = <&to 3>;
             key-positions = <4 5 3>;
             layers = <0>;
         };
 
-        Default_layer {
+        PS_TO_DEFAULT_LAYER {
             bindings = <&to 0>;
             key-positions = <1 2 3>;
             layers = <3 4>;
         };
 
-        Invert_Selection {
+        PS_Invert_Selection {
             bindings = <&kp LC(LS(I))>;
             key-positions = <3 3 4>;
             layers = <3 4>;
         };
 
-        NUMBERS {
+        PS_NUMBERS {
             bindings = <&to 5>;
-            key-positions = <2 3 4 5>;
+            key-positions = <2 3 4>;
             layers = <3 4>;
         };
 
-        BASE {
+        PS_BASE {
             bindings = <&to 3>;
             key-positions = <2 3 4>;
             layers = <5>;
+        };
+
+        PS_ENTER {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
+            layers = <1 2 0>;
         };
     };
 
@@ -266,10 +272,10 @@
 
         PS_NAV {
             bindings = <
-&trans  &kp LC(U)  &kp LC(L)  &kp LC(B)  &kp LS(LC(P))  &mt LC(LA(G)) LS(LA(LC(N)))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp Z      &kp R      &kp SPACE      &mt LC(E) SLASH                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans         &kp BACKSPACE                  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans     &trans         &trans                         &trans  &trans  &trans
+&trans  &trans  &kp LC(L)  &mt LC(B) LC(U)  &mt LS(LC(P)) LC(L)  &mt LC(LA(G)) LS(LA(LC(N)))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z      &kp R            &kp SPACE            &mt LC(E) SLASH                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans           &kp BACKSPACE        &kp ENTER                      &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans           &trans               &trans                         &trans  &trans  &trans
             >;
         };
 
