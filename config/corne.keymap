@@ -263,7 +263,7 @@
 
         PS_BASE {
             bindings = <
-&none  &kp ESCAPE        &td_laso_clear_selection  &td_marquee_reselect  &kp LC(T)         &kp LEFT_ALT         &none  &none  &none  &none  &none  &none
+&none  &kp ESCAPE        &td_laso_clear_selection  &td_marquee_reselect  &kp LC(T)         &kp ENTER            &none  &none  &none  &none  &none  &none
 &none  &kp LEFT_CONTROL  &td_brush_brush_erase     &kp L                 &kp E             &kp G                &none  &none  &none  &none  &none  &none
 &none  &kp GRAVE         &kp LC(Z)                 &kp LS(LC(Z))         &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none  &none  &none  &none
                                                    &kp LEFT_SHIFT        &kp LEFT_ALT      &mo 4                &none  &none  &none
@@ -273,7 +273,7 @@
         PS_NAV {
             bindings = <
 &trans  &trans  &kp LC(L)  &mt LC(B) LC(U)  &mt LS(LC(P)) LC(L)  &mt LC(LA(G)) LS(LA(LC(N)))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp Z      &kp R            &kp SPACE            &mt LC(E) SLASH                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z      &kp R            &kp SPACE            &mt SLASH LC(E)                &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans           &kp BACKSPACE        &kp ENTER                      &trans  &trans  &trans  &trans  &trans  &trans
                            &trans           &trans               &trans                         &trans  &trans  &trans
             >;
