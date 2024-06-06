@@ -82,17 +82,6 @@
             tapping-term-ms = <400>;
         };
 
-        undo: undo {
-            compatible = "zmk,behavior-hold-tap";
-            label = "UNDO";
-            bindings = <&key_repeat>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <140>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
-        };
-
         td_brush_brush_erase: td_brush_brush_erase {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRUSH_BRUSH_ERASE";
@@ -211,7 +200,7 @@
         Invert_Selection {
             bindings = <&kp LC(LS(I))>;
             key-positions = <3 3 4>;
-            layers = <3 4 5>;
+            layers = <3 4>;
         };
     };
 
@@ -276,15 +265,6 @@
 &trans  &trans  &kp Z   &kp R   &kp SPACE  &kp LC(E)                      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans     &kp BACKSPACE                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans     &trans                         &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
