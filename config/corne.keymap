@@ -202,6 +202,18 @@
             key-positions = <3 3 4>;
             layers = <3 4>;
         };
+
+        NUMBERS {
+            bindings = <&to 5>;
+            key-positions = <2 3 4>;
+            layers = <3 4>;
+        };
+
+        BASE {
+            bindings = <&to 3>;
+            key-positions = <2 3 4>;
+            layers = <5>;
+        };
     };
 
     macros {
@@ -258,6 +270,15 @@
 &trans  &trans     &kp Z      &kp R      &kp SPACE      &mt LC(E) SLASH                &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans         &kp BACKSPACE                  &trans  &trans  &trans  &trans  &trans  &trans
                               &trans     &trans         &trans                         &trans  &trans  &trans
+            >;
+        };
+
+        NUMBERS {
+            bindings = <
+&trans  &none  &kp N7  &kp N8  &kp N9  &kp N0       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none  &kp N4  &kp N5  &kp N6  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none  &kp N1  &kp N2  &kp N3  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                       &trans  &trans  &kp ENTER    &trans  &trans  &trans
             >;
         };
     };
