@@ -272,10 +272,10 @@
 
         PS_NAV {
             bindings = <
-&trans  &trans  &kp LC(L)  &mt LC(B) LC(U)  &mt LS(LC(P)) LC(L)  &mt LC(LA(G)) LS(LA(LC(N)))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp Z      &kp R            &kp SPACE            &mt SLASH LC(E)                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans           &kp BACKSPACE        &kp ENTER                      &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans           &trans               &trans                         &trans  &trans  &trans
+&trans  &trans  &kp LC(L)  &mt LC(B) LC(U)      &mt LS(LC(P)) LC(L)  &mt LC(LA(G)) LS(LA(LC(N)))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z      &kp R                &kp SPACE            &mt SLASH LC(E)                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(C)  &mt LC(LS(V)) LC(V)  &kp BACKSPACE        &kp ENTER                      &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans               &trans               &trans                         &trans  &trans  &trans
             >;
         };
 
