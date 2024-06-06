@@ -63,6 +63,20 @@
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
         };
+
+        laso_clear_selection: laso_clear_selection {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LASO_CLEAR_SELECTION";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp LC(D)>;
+        };
+
+        marquee_reselect: marquee_reselect {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MARQUEE_RESELECT";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp LC(LS(D))>;
+        };
     };
 
     combos {
@@ -212,10 +226,10 @@
 
         PS_BASE {
             bindings = <
-&trans  &kp Q      &kp L      &kp M           &trans            &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp B      &kp L      &kp E           &kp G             &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp LC(Z)  &kp LS(LC(Z))   &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mo 4           &trans  &trans  &trans
+&trans  &kp Q      &laso_clear_selection  &marquee_reselect  &trans            &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp B      &kp L                  &kp E              &kp G             &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp LC(Z)              &kp LS(LC(Z))      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                          &kp LEFT_SHIFT     &kp LEFT_CONTROL  &mo 4           &trans  &trans  &trans
             >;
         };
 
