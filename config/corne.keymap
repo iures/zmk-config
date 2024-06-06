@@ -211,13 +211,6 @@
             bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
             label = "HYPER";
         };
-
-        undo_repeat: undo_repeat {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "UNDO_REPEAT";
-        };
     };
 
     keymap {
