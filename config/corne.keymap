@@ -70,7 +70,7 @@
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp LC(D)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <400>;
         };
 
         td_marquee_reselect: td_marquee_reselect {
@@ -79,7 +79,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp LC(LS(D))>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <400>;
         };
 
         undo: undo {
@@ -98,6 +98,8 @@
             label = "TD_BRUSH_BRUSH_ERASE";
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp GRAVE>;
+
+            tapping-term-ms = <350>;
         };
     };
 
@@ -205,6 +207,12 @@
             key-positions = <1 2 3>;
             layers = <3 4>;
         };
+
+        Invert_Selection {
+            bindings = <&kp LC(LS(I))>;
+            key-positions = <3 3 4>;
+            layers = <3 4 5>;
+        };
     };
 
     macros {
@@ -213,6 +221,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT>;
             label = "HYPER";
+        };
+
+        undo_repeat: undo_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "UNDO_REPEAT";
         };
     };
 
@@ -248,19 +263,28 @@
 
         PS_BASE {
             bindings = <
-&trans  &kp Q                  &td_laso_clear_selection  &td_marquee_reselect  &kp LC(T)         &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &td_brush_brush_erase  &kp L                     &kp E                 &kp G             &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE              &undo 0 LC(Z)             &undo 0 LS(LC(Z))     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                                         &kp LEFT_SHIFT        &kp LEFT_CONTROL  &mo 4           &trans  &trans  &trans
+&none  &kp ESCAPE        &td_laso_clear_selection  &td_marquee_reselect  &kp LC(T)         &kp LEFT_ALT         &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_CONTROL  &td_brush_brush_erase     &kp L                 &kp E             &kp G                &none  &none  &none  &none  &none  &none
+&none  &kp GRAVE         &kp LC(Z)                 &kp LS(LC(Z))         &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none  &none  &none  &none  &none  &none
+                                                   &kp LEFT_SHIFT        &kp LEFT_ALT      &mo 4                &none  &none  &none
             >;
         };
 
         PS_NAV {
             bindings = <
-&trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SPACE  &kp Z   &kp R   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &mt LC(LA(G)) LS(LA(LC(N)))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z   &kp R   &kp SPACE  &kp LC(E)                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &kp BACKSPACE                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans     &trans                         &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
