@@ -133,7 +133,7 @@
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <19 7>;
+            key-positions = <20 32>;
             layers = <0 1 2>;
         };
 
@@ -248,10 +248,10 @@
 
         layer_2 {
             bindings = <
-&trans  &kp GRAVE       &trans        &trans        &trans        &trans    &trans    &trans    &trans  &trans     &trans    &trans
-&trans  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans    &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &trans    &trans    &trans  &trans     &kp PIPE  &trans
-                                      &trans        &trans        &trans    &trans    &trans    &trans
+&trans  &kp GRAVE       &trans        &trans        &trans        &trans    &trans                &trans                 &trans          &trans           &trans    &trans
+&trans  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT        &trans    &trans
+&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE  &trans
+                                      &trans        &trans        &trans    &trans                &trans                 &trans
             >;
         };
 
