@@ -103,18 +103,18 @@
 
         kl_und {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <20 21>;
+            key-positions = <33 32>;
             layers = <0 1 2>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <32 33>;
+            key-positions = <20 21>;
             layers = <0 1 2>;
         };
 
-        single_quote {
-            bindings = <&kp SINGLE_QUOTE>;
+        semicolon {
+            bindings = <&kp SEMICOLON>;
             key-positions = <22 21>;
             layers = <0 1 2>;
         };
